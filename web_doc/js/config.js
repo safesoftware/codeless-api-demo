@@ -1,0 +1,1 @@
+var host = "http://localhost/web_projects/transit-api/";
