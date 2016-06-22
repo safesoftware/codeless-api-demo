@@ -5,54 +5,54 @@
 #    Command-line to run this workspace:
 #    
 #    
-#    /Library/FME/2016.1/fme "/Users/sharper/Documents/Work/Projects/APIs/Webinar 2/transit_api_get_bus.fmw"
-#          --busId "447fa994-331f-11e6-a4ab-20c9d048ddd1"
+#    /Library/FME/2016.1/fme /Users/sharper/web_projects/codeless-api-demo/fme_cloud/transit_api_get_bus.fmw
+#          --busId ""
 #    
 #    
+#!   DOC_EXTENTS="5156.55 869.511"
 #!   WORKSPACE_VERSION="1"
+#!   DOC_TOP_LEFT="63.5002 -1113.76"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   LEGAL_TERMS_CONDITIONS=""
+#!   LAST_SAVE_DATE="2016-06-21T09:48:18"
+#!   FME_DOCUMENT_PRIORGUID="15c79c00-3339-11e6-b020-20c9d048ddd1,8aaa5d90-333a-11e6-a83d-20c9d048ddd1,226c3a60-376c-11e6-a26c-20c9d048ddd1"
+#!   TITLE=""
+#!   IGNORE_READER_FAILURE="No"
+#!   REQUIREMENTS_KEYWORD=""
+#!   SOURCE="NONE"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   MAX_LOG_FEATURES="200"
+#!   LAST_SAVE_BUILD="FME(R) 2016.1.0.0 (20160419 - Build 16492 - macosx)"
 #!   PYTHON_COMPATIBILITY="27"
+#!   PASSWORD=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_BUILD_NUM="16492"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   DESTINATION="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   FME_DOCUMENT_GUID="d087d4a2-37cf-11e6-a26c-20c9d048ddd1"
+#!   SHOW_INFO_NODES="true"
+#!   REQUIREMENTS=""
+#!   DESCRIPTION=""
+#!   HISTORY=""
+#!   BEGIN_TCL=""
+#!   VIEW_POSITION="21.0002 375.004"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   FME_SERVER_SERVICES=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   USAGE=""
 #!   END_TCL=""
 #!   SOURCE_ROUTING_FILE=""
-#!   DOC_TOP_LEFT="63.5002 -1113.76"
-#!   LOG_MAX_RECORDED_FEATURES="200"
-#!   ZOOM_SCALE="100"
-#!   FME_BUILD_NUM="16492"
-#!   IGNORE_READER_FAILURE="No"
-#!   MAX_LOG_FEATURES="200"
-#!   ATTR_TYPE_ENCODING="SDF"
-#!   LOG_FILE=""
-#!   LAST_SAVE_DATE="2016-06-15T15:20:49"
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   SHOW_ANNOTATIONS="true"
-#!   VIEW_POSITION="-357.004 699.007"
-#!   BEGIN_TCL=""
-#!   FME_DOCUMENT_PRIORGUID="15c79c00-3339-11e6-b020-20c9d048ddd1"
-#!   REQUIREMENTS_KEYWORD=""
-#!   DOC_EXTENTS="5153.55 869.506"
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   DESTINATION_ROUTING_FILE=""
-#!   TITLE=""
-#!   FME_DOCUMENT_GUID="8aaa5d90-333a-11e6-a83d-20c9d048ddd1"
-#!   REDIRECT_TERMINATORS="NONE"
-#!   END_PYTHON=""
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   LAST_SAVE_BUILD="FME(R) 2016.1.0.0 (20160419 - Build 16492 - macosx)"
-#!   REQUIREMENTS=""
 #!   FME_GEOMETRY_HANDLING="Enhanced"
-#!   PASSWORD=""
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   CATEGORY=""
-#!   SHOW_INFO_NODES="true"
-#!   LEGAL_TERMS_CONDITIONS=""
-#!   SOURCE="NONE"
-#!   HISTORY=""
-#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
 #!   BEGIN_PYTHON=""
-#!   FME_SERVER_SERVICES=""
-#!   DESCRIPTION=""
-#!   USAGE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   END_PYTHON=""
+#!   ZOOM_SCALE="100"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   LOG_FILE=""
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   CATEGORY=""
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -68,7 +68,7 @@
 #!   WRITE_DEFS="false"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="false"
-#!   EXPOSABLE_ATTRS="fme_primary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_feature_type char(50) text_line_eol char(10) fme_secondary_axis number(31,15) fme_type char(50) fme_color char(50) fme_basename char(50) fme_text_size number(31,15) fme_dataset char(50) fme_text_string char(50) fme_fill_color char(50) fme_geometry fme_char(50) fme_rotation number(31,15)"
+#!   EXPOSABLE_ATTRS="text_line_eol char(10) fme_color char(50) fme_text_string char(50) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_basename char(50) fme_text_size number(31,15) fme_secondary_axis number(31,15) fme_fill_color char(50) fme_type char(50) fme_primary_axis number(31,15) fme_geometry fme_char(50) fme_rotation number(31,15) fme_feature_type char(50) fme_dataset char(50)"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -77,29 +77,29 @@
 #!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
 #!   DATASET_TYPE="FILE"
 #!   GENERATE_FME_BUILD_NUM="16492"
-#!   FANOUT_EXPRESSION=""
-#!   FANOUT_GROUP="NO"
 #!   COORDSYS=""
+#!   FANOUT_GROUP="NO"
+#!   FANOUT_EXPRESSION=""
 #! >
-#! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the Text file(s)"
-#! />
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="txt file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="MIME_TYPE"
-#!   VALUE="application/json"
 #! />
 #! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_DEFAULT_NAME"
 #!   VALUE="text_line"
 #! />
 #! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Text file(s)"
+#! />
+#! <METAFILE_PARAMETER
 #!   NAME="WRITER_DATASET_HINT"
 #!   VALUE="Specify a name for the Text file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/json"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -344,8 +344,8 @@
 #!   IS_EDITABLE="true"
 #!   IDENTIFIER="14"
 #!   FEAT_GEOMTYPE="All"
-#!   POSITION="5217.05 -562.75"
-#!   BOUNDING_RECT="5217.05 -562.75 -1 -1"
+#!   POSITION="5220.05 -517.75"
+#!   BOUNDING_RECT="5220.05 -517.75 -1 -1"
 #!   ORDER="5e+14"
 #!   COLLAPSED="false"
 #!   KEYWORD="TEXTLINE_1"
@@ -357,11 +357,128 @@
 #! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmedatastreaming"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="OUTPUT_WRITER"
+#!   VALUE="TEXTLINE_1"
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="Webinar"
+#! />
+#! <ITEM
+#!   NAME="transit_api_get_bus.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBParameterNode_4:DATASET"
+#!   VALUE="FMEpedia"
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBParameterNode_6:DATASET"
+#!   VALUE="FMEpedia"
+#! />
+#! <MODIFICATION
+#!   UID=":DatasetMgr_TEXTLINE_1:DestDataset_TEXTLINE_1"
+#!   VALUE="/Users/sharper/Documents/Workspaces/output.txt"
+#! />
+#! </MODIFICATIONS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
 #!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR busId Bus ID:"
-#!   DEFAULT_VALUE="447fa994-331f-11e6-a4ab-20c9d048ddd1"
+#!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="true"
 #! />
 #! </GLOBAL_PARAMETERS>
@@ -379,7 +496,7 @@
 #!   BOUNDING_RECT="1210.82 -244.249 2416.22 537.507"
 #!   STICKY="true"
 #!   COLOUR="0.509804,0.027451,0.27451"
-#!   CONTENTS="6 9 12 7 4 "
+#!   CONTENTS="7 9 6 12 4 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -397,16 +514,16 @@
 #!     <OUTPUT_FEAT NAME="CREATED"/>
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
-#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
-#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
-#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
 #!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
-#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
 #!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Creator"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="_creation_instance"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="2"
@@ -453,21 +570,21 @@
 #!     <XFORM_ATTR ATTR_NAME="busId" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="2" />
 #!     <XFORM_ATTR ATTR_NAME="bus_count" IS_USER_CREATED="false" FEAT_INDEX="2" />
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Result Attributes if Conflict"/>
 #!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGIS"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="transit"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_DISABLE_COLLECTION_SPLITTING" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_NAMED_CONNECTION" PARM_VALUE="FMEpedia"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_USE_TRUE_POSTGIS_TYPES" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="bus_count"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="FMEpedia"/>
 #!     <XFORM_PARM PARM_NAME="SQL_STATEMENT" PARM_VALUE="SELECT&lt;space&gt;count&lt;openparen&gt;bus_id&lt;closeparen&gt;&lt;space&gt;As&lt;space&gt;bus_count&lt;space&gt;FROM&lt;space&gt;&lt;quote&gt;transit&lt;quote&gt;.&lt;quote&gt;Buses&lt;quote&gt;&lt;space&gt;WHERE&lt;space&gt;bus_id&lt;space&gt;=&lt;space&gt;&lt;apos&gt;&lt;at&gt;Value&lt;openparen&gt;busId&lt;closeparen&gt;&lt;apos&gt;&lt;semicolon&gt;&lt;lf&gt;"/>
 #!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGIS_DISABLE_COLLECTION_SPLITTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGIS_USE_TRUE_POSTGIS_TYPES,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Connection:"/>
-#!     <XFORM_PARM PARM_NAME="COMBINE_ATTRS" PARM_VALUE="Keep Result Attributes if Conflict"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_NAMED_CONNECTION" PARM_VALUE="FMEpedia"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_DISABLE_COLLECTION_SPLITTING" PARM_VALUE="yes"/>
-#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Initiator Geometry Only"/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="FMEpedia"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_USE_TRUE_POSTGIS_TYPES" PARM_VALUE="yes"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SQLExecutor"/>
-#!     <XFORM_PARM PARM_NAME="EXPOSED_ATTRIBUTE_LIST" PARM_VALUE="bus_count"/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="transit"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="7"
@@ -490,13 +607,13 @@
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="busId" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="bus_count" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
-#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;bus_count&lt;closeparen&gt; != 0"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestBusIdExists"/>
-#!     <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
 #!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="Automatic"/>
+#!     <XFORM_PARM PARM_NAME="TEST_DESCRIPTION" PARM_VALUE="&quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestBusIdExists"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;bus_count&lt;closeparen&gt; != 0"/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="8"
@@ -515,23 +632,23 @@
 #!     <XFORM_ATTR ATTR_NAME="_creation_instance" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="busId" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="bus_count" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data SET_TO &lt;opencurly&gt;&lt;quote&gt;status&lt;quote&gt;:400&lt;comma&gt;&lt;quote&gt;message&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;Invalid&lt;space&gt;Attribute:&lt;space&gt;The&lt;space&gt;bus&lt;space&gt;ID&lt;space&gt;does&lt;space&gt;not&lt;space&gt;match&lt;space&gt;an&lt;space&gt;existing&lt;space&gt;ID&lt;quote&gt;&lt;closecurly&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ValidBusNoJSONBuilde"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data SET_TO &lt;opencurly&gt;&lt;quote&gt;status&lt;quote&gt;:400&lt;comma&gt;&lt;quote&gt;message&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;Invalid&lt;space&gt;Attribute:&lt;space&gt;The&lt;space&gt;bus&lt;space&gt;ID&lt;space&gt;does&lt;space&gt;not&lt;space&gt;match&lt;space&gt;an&lt;space&gt;existing&lt;space&gt;ID&lt;quote&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #!   IDENTIFIER="17"
 #!   TYPE="AttributeCreator"
 #!   VERSION="8"
-#!   POSITION="4230.29 -331.503"
-#!   BOUNDING_RECT="4230.29 -331.503 689.508 71"
+#!   POSITION="4353.29 -331.503"
+#!   BOUNDING_RECT="4353.29 -331.503 506.757 71"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -549,15 +666,15 @@
 #!     <XFORM_ATTR ATTR_NAME="bearing" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_geometry" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data SET_TO &lt;opencurly&gt;&lt;quote&gt;bus_id&lt;quote&gt;:&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;bus_id&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;bearing&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;bearing&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;route_no&lt;quote&gt;:&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;route_no&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;speed&lt;quote&gt;:0&lt;comma&gt;&lt;space&gt;&lt;quote&gt;recorded_time&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;recorded_time&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;geometry&lt;quote&gt;:&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_geometry&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;crs&lt;quote&gt;:&lt;quote&gt;EPSG:4326&lt;quote&gt;&lt;closecurly&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
 #!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SuccessJSONBuilder"/>
-#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; text_line_data SET_TO &lt;opencurly&gt;&lt;quote&gt;bus_id&lt;quote&gt;:&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;bus_id&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;bearing&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;bearing&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;route_no&lt;quote&gt;:&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;route_no&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;speed&lt;quote&gt;:&lt;at&gt;Value&lt;openparen&gt;speed&lt;closeparen&gt;&lt;comma&gt;&lt;space&gt;&lt;quote&gt;recorded_time&lt;quote&gt;:&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;recorded_time&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;geometry&lt;quote&gt;:&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_geometry&lt;closeparen&gt;&lt;quote&gt;&lt;comma&gt;&lt;quote&gt;crs&lt;quote&gt;:&lt;quote&gt;EPSG:4326&lt;quote&gt;&lt;closecurly&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -609,49 +726,49 @@
 #!     <XFORM_ATTR ATTR_NAME="busId" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="bus_count" IS_USER_CREATED="false" FEAT_INDEX="4" />
 #!     <XFORM_ATTR ATTR_NAME="_reader_error" IS_USER_CREATED="false" FEAT_INDEX="4" />
-#!     <XFORM_PARM PARM_NAME="POSTGIS_TABLELIST" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Data Features"/>
-#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="transit.Buses"/>
-#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;No Spatial Filter&gt;"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_POSTGIS_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="transit"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_FME_CONNECTION_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="bus_id=&lt;apos&gt;&lt;at&gt;Value&lt;openparen&gt;busId&lt;closeparen&gt;&lt;apos&gt;"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
-#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="transit.Buses,&quot;bus_id,route_no,recorded_time,bearing,speed&quot;"/>
 #!     <XFORM_PARM PARM_NAME="POSTGIS_DISABLE_COLLECTION_SPLITTING" PARM_VALUE="yes"/>
-#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_CLIP_TO_ENVELOPE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGIS_TABLELIST,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Table&lt;space&gt;List:,POSTGIS_DISABLE_COLLECTION_SPLITTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_FME_CONNECTION_GROUP,&quot;OPTIONAL NAMEDGROUP NAMED_CONNECTION%SCHEMAS_FOR_TABLE_LISTING&quot;,POSTGIS&lt;space&gt;Database&lt;space&gt;Connection,POSTGIS_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGIS_POSTGIS_EXPOSE_FORMAT_ATTRS,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,POSTGIS_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%CLIP_TO_ENVELOPE&quot;,POSTGIS&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,POSTGIS_CLIP_TO_ENVELOPE,&quot;OPTIONAL CHECKBOX YES%NO&quot;,POSTGIS&lt;space&gt;Clip&lt;space&gt;to&lt;space&gt;Search&lt;space&gt;Envelope,POSTGIS_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP POSTGIS_EXPOSE_FORMAT_ATTRS&quot;,POSTGIS&lt;space&gt;Schema&lt;space&gt;Attributes,POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Connection:,POSTGIS_USE_TRUE_POSTGIS_TYPES,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;"/>
-#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_NAMED_CONNECTION" PARM_VALUE="FMEpedia"/>
-#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
-#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGIS"/>
-#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="POSTGIS_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
-#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="transit.Buses"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES" PARM_VALUE="transit.Buses,&quot;bus_id,route_no,recorded_time,bearing,speed&quot;"/>
 #!     <XFORM_PARM PARM_NAME="POSTGIS_USE_TRUE_POSTGIS_TYPES" PARM_VALUE="yes"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
-#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="FMEpedia"/>
-#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="CACHE_TIMEOUT_HRS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_CLIP_TO_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_SCHEMAS_FOR_TABLE_LISTING" PARM_VALUE="transit"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_POSTGIS_EXPOSE_FORMAT_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_DISPLAY" PARM_VALUE="Data Features"/>
+#!     <XFORM_PARM PARM_NAME="SELECTED_PORTS" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="MERGE_HANDLING_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_NAMED_CONNECTION" PARM_VALUE="FMEpedia"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_FME_CONNECTION_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SINGLE_PORT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_EXPOSE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MAX_FEATURES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SUPPORTED_SPATIAL_INTERACTIONS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureReader"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_TABLELIST" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CONSTRAINTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="FORMAT" PARM_VALUE="POSTGIS"/>
+#!     <XFORM_PARM PARM_NAME="DATASET" PARM_VALUE="FMEpedia"/>
+#!     <XFORM_PARM PARM_NAME="FEATURETYPES" PARM_VALUE="transit.Buses"/>
+#!     <XFORM_PARM PARM_NAME="PORTS_FROM_FTTR" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Initiator and Result"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_EXPOSE_ATTRS_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_FEATURES_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="FORMAT_PARAMS" PARM_VALUE="POSTGIS_TABLELIST,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Table&lt;space&gt;List:,POSTGIS_DISABLE_COLLECTION_SPLITTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_FME_CONNECTION_GROUP,&quot;OPTIONAL NAMEDGROUP NAMED_CONNECTION%SCHEMAS_FOR_TABLE_LISTING&quot;,POSTGIS&lt;space&gt;Database&lt;space&gt;Connection,POSTGIS_SCHEMAS_FOR_TABLE_LISTING,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Schemas&lt;space&gt;for&lt;space&gt;Table&lt;space&gt;Listing:,POSTGIS_POSTGIS_EXPOSE_FORMAT_ATTRS,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Additional&lt;space&gt;Attributes&lt;space&gt;to&lt;space&gt;Expose:,POSTGIS_USE_SEARCH_ENVELOPE,&quot;OPTIONAL ACTIVEDISCLOSUREGROUP SEARCH_ENVELOPE_MINX%SEARCH_ENVELOPE_MINY%SEARCH_ENVELOPE_MAXX%SEARCH_ENVELOPE_MAXY%CLIP_TO_ENVELOPE&quot;,POSTGIS&lt;space&gt;Use&lt;space&gt;Search&lt;space&gt;Envelope,POSTGIS_CLIP_TO_ENVELOPE,&quot;OPTIONAL CHECKBOX YES%NO&quot;,POSTGIS&lt;space&gt;Clip&lt;space&gt;to&lt;space&gt;Search&lt;space&gt;Envelope,POSTGIS_EXPOSE_ATTRS_GROUP,&quot;OPTIONAL DISCLOSUREGROUP POSTGIS_EXPOSE_FORMAT_ATTRS&quot;,POSTGIS&lt;space&gt;Schema&lt;space&gt;Attributes,POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;,POSTGIS_NAMED_CONNECTION,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;Connection:,POSTGIS_USE_TRUE_POSTGIS_TYPES,&quot;IGNORE TEXT&quot;,POSTGIS&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ENABLE_CACHE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="AVAILABLE_FEATURE_TYPES" PARM_VALUE="transit.Buses"/>
+#!     <XFORM_PARM PARM_NAME="FTTR_SEPARATOR" PARM_VALUE="SPACE"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS" PARM_VALUE="Yes"/>
 #!     <XFORM_PARM PARM_NAME="OUTPUT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="INTERACT" PARM_VALUE="&lt;No Spatial Filter&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_PORTS_MODE" PARM_VALUE="PORTS_FROM_FTTR"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUTPORTS_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="POSTGIS_USE_SEARCH_ENVELOPE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="WHERE" PARM_VALUE="bus_id=&lt;apos&gt;&lt;at&gt;Value&lt;openparen&gt;busId&lt;closeparen&gt;&lt;apos&gt;"/>
+#!     <XFORM_PARM PARM_NAME="READER_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Result"/>
+#!     <XFORM_PARM PARM_NAME="COMBINE_GEOM" PARM_VALUE="Use Result"/>
 #!     <XFORM_PARM PARM_NAME="FORMAT_DIRECTIVES" PARM_VALUE="META_MACROS,SourceDISABLE_COLLECTION_SPLITTING&lt;comma&gt;yes&lt;comma&gt;SourceFME_CONNECTION_GROUP&lt;comma&gt;&lt;comma&gt;SourceSCHEMAS_FOR_TABLE_LISTING&lt;comma&gt;transit&lt;comma&gt;SourcePOSTGIS_EXPOSE_FORMAT_ATTRS&lt;comma&gt;&lt;comma&gt;SourceUSE_SEARCH_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceCLIP_TO_ENVELOPE&lt;comma&gt;NO&lt;comma&gt;SourceEXPOSE_ATTRS_GROUP&lt;comma&gt;FME_DISCLOSURE_CLOSED&lt;comma&gt;SourceQUERY_FEATURE_TYPES_FOR_MERGE_FILTERS&lt;comma&gt;Yes&lt;comma&gt;SourceNAMED_CONNECTION&lt;comma&gt;FMEpedia&lt;comma&gt;SourceUSE_TRUE_POSTGIS_TYPES&lt;comma&gt;yes,METAFILE,POSTGIS"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
@@ -659,7 +776,7 @@
 #!   TYPE="GeometryExtractor"
 #!   VERSION="11"
 #!   POSITION="3717.91 -331.503"
-#!   BOUNDING_RECT="3717.91 -331.503 -1 -1"
+#!   BOUNDING_RECT="3717.91 -331.503 536.133 71"
 #!   ORDER="5e+14"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -687,29 +804,29 @@
 #!     <XFORM_ATTR ATTR_NAME="bearing" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="speed" IS_USER_CREATED="false" FEAT_INDEX="1" />
 #!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryExtractor"/>
-#!     <XFORM_PARM PARM_NAME="PREFER_POLYGON_OVER_SURFACE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="OGCVERSION" PARM_VALUE="1.1"/>
-#!     <XFORM_PARM PARM_NAME="OGC_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
-#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POLYLINE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE="_geometry"/>
 #!     <XFORM_PARM PARM_NAME="GEOHASH_PRECISION_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XML_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LEVELS_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LETTERING" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="MSSQL_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="OGEOSMS_URL_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XML_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="OMIT_NAMESPACES_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="KIND_LONG" PARM_VALUE="OGC Well Known Text"/>
-#!     <XFORM_PARM PARM_NAME="LEVELS_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="OGC_WKT_PRECISION_DISPLAY" PARM_VALUE="Shortened 64-bit"/>
-#!     <XFORM_PARM PARM_NAME="MGRS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ATTR" PARM_VALUE="_geometry"/>
-#!     <XFORM_PARM PARM_NAME="LETTERING" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="POLYLINE_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="REMOVE_GEOMETRY" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="MSSQL_FORMAT_CHOICE" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="GEOHASH_GROUP" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="ELLIPSOID_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="KIND_LONG" PARM_VALUE="OGC Well Known Text"/>
+#!     <XFORM_PARM PARM_NAME="REMOVE_GEOMETRY" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OGCVERSION" PARM_VALUE="1.1"/>
+#!     <XFORM_PARM PARM_NAME="GEOHASH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OGC_WKT_PRECISION_DISPLAY" PARM_VALUE="Shortened 64-bit"/>
 #!     <XFORM_PARM PARM_NAME="PRECISION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="OMIT_NAMESPACES_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MSSQL_FORMAT_CHOICE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PREFER_POLYGON_OVER_SURFACE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryExtractor"/>
+#!     <XFORM_PARM PARM_NAME="MGRS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OGC_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -824,7 +941,7 @@
 #! </WORKSPACE>
 FME_PYTHON_VERSION 27
 GUI IGNORE DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1
-DEFAULT_MACRO busId 447fa994-331f-11e6-a4ab-20c9d048ddd1
+DEFAULT_MACRO busId 
 GUI OPTIONAL TEXT busId Bus ID:
 #! START_HEADER
 #! START_WB_HEADER
@@ -991,7 +1108,7 @@ FACTORY_DEF * TestFactory    FACTORY_NAME GeometryExtractor_Rejector    INPUT FE
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * AttrSetFactory    FACTORY_NAME SuccessJSONBuilder    INPUT  FEATURE_TYPE GeometryExtractor_OUTPUT    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "text_line_data" "SET_TO" "<opencurly><quote>bus_id<quote>:<quote><at>Value<openparen>bus_id<closeparen><quote><comma><quote>bearing<quote>:<space><quote><at>Value<openparen>bearing<closeparen><quote><comma><quote>route_no<quote>:<quote><at>Value<openparen>route_no<closeparen><quote><comma><space><quote>speed<quote>:<at>Value<openparen>speed<closeparen><comma><space><quote>recorded_time<quote>:<space><quote><at>Value<openparen>recorded_time<closeparen><quote><comma><quote>geometry<quote>:<quote><at>Value<openparen>_geometry<closeparen><quote><comma><quote>crs<quote>:<quote>EPSG:4326<quote><closecurly>"    OUTPUT OUTPUT FEATURE_TYPE SuccessJSONBuilder_OUTPUT
+FACTORY_DEF * AttrSetFactory    FACTORY_NAME SuccessJSONBuilder    INPUT  FEATURE_TYPE GeometryExtractor_OUTPUT    MULTI_FEATURE_MODE NO 	 NULL_ATTR_MODE NO_OP 	 ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV 	 ATTR_ACTION "" "text_line_data" "SET_TO" "<opencurly><quote>bus_id<quote>:<quote><at>Value<openparen>bus_id<closeparen><quote><comma><quote>bearing<quote>:<space><quote><at>Value<openparen>bearing<closeparen><quote><comma><quote>route_no<quote>:<quote><at>Value<openparen>route_no<closeparen><quote><comma><space><quote>speed<quote>:0<comma><space><quote>recorded_time<quote>:<space><quote><at>Value<openparen>recorded_time<closeparen><quote><comma><quote>geometry<quote>:<quote><at>Value<openparen>_geometry<closeparen><quote><comma><quote>crs<quote>:<quote>EPSG:4326<quote><closecurly>"    OUTPUT OUTPUT FEATURE_TYPE SuccessJSONBuilder_OUTPUT
 
 
 # -------------------------------------------------------------------------

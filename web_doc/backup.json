@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "2016-06-21T05:15:02Z",
+    "version": "2016-06-16T18:34:11Z",
     "title": "TransitAPI"
   },
   "host": "31w0lknwo5.execute-api.us-east-1.amazonaws.com",
@@ -159,6 +159,51 @@
       }
     },
     "/buses/{busId}": {
+      "get": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "busId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "schema": {
+              "$ref": "#/definitions/GetBusOutputModel"
+            },
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "400 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          },
+          "500": {
+            "description": "500 response",
+            "headers": {
+              "Access-Control-Allow-Origin": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
       "put": {
         "consumes": [
           "application/json"
@@ -279,6 +324,32 @@
   "definitions": {
     "Empty": {
       "type": "object"
+    },
+    "GetBusOutputModel": {
+      "type": "object",
+      "properties": {
+        "bus_id": {
+          "type": "string"
+        },
+        "route_no": {
+          "type": "string"
+        },
+        "recorded_time": {
+          "type": "string"
+        },
+        "bearing": {
+          "type": "string"
+        },
+        "speed": {
+          "type": "number"
+        },
+        "crs": {
+          "type": "string"
+        },
+        "geometry": {
+          "type": "string"
+        }
+      }
     },
     "GetBusesOuputModel": {
       "type": "array",

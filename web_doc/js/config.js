@@ -1,1 +1,1 @@
-var host = "http://localhost/web_projects/transit-api/";
+var host = "http://localhost/web_projects/codeless-api-demo/";
