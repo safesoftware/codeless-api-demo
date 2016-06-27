@@ -15,3 +15,7 @@ Create a codeless API using AWS API Gateway and FME Cloud
 
 - **Set the AWS permissions** - You need to grant the correct IAM permissions to the AWS Lambda function so that the API gateway can connect to it. The easiest way to do this is for each method (GET, POST, PUT etc), click on Integration Request and then reslect the Lambda function, this should popup a message that says: "You are about to give API Gateway permission to invoke your Lambda function:
 arn:aws:lambda:us-east-1:xxxxxxxxxxxxx:function:transitAPIResourceHandler"
+
+[This video](https://www.youtube.com/watch?v=_9VxQg6A7YU) walks you through how to setup all of the compoenets on the GitHub repo.
+
+[This video](https://www.youtube.com/watch?v=qfPlm84Hlp8) is a recording of the full webinar, and it walks you through how to use FME Cloud and AWS API Gateway to build an API on top of a PostGIS databse. It gives you an in-depth look on how to configure API Gateway and how AWS Lambda ties API Gateway and FME Cloud together.
